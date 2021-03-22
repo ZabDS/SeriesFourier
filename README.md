@@ -7,11 +7,11 @@ Siguiendo las instrucciones de [Create React App](https://github.com/facebook/cr
 
 ## Paquetes usados:
 ### React-vis
-npm install react-vis
+`npm install react-vis`
 
 ### Material-UI
-npm install @material-ui/core
-npm install fontsource-roboto
+`npm install @material-ui/core`
+`npm install fontsource-roboto`
 
 Para correr el proyecto usar en el directorio del proyecto:
 ### `npm run start`

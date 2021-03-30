@@ -33,7 +33,9 @@ La práctica consta de un gráfico que muestra la representación de la serie de
  ![](./Images/FGRAPH2.png)
  ![](./Images/FGRAPH3.png)
  
+ 
  Cuyas aproximaciones en un graficador son:
+ 
  ![](./Images/ESCREAL.jpg)
  ![](./Images/ARMREAL.jpg)
  ![](./Images/TRGREAL.jpg)

@@ -31,12 +31,12 @@ La práctica consta de un gráfico que muestra la representación de la serie de
  Las gráficas definidas en el programa son:
  ![](./Images/FGRAPH1.png)
  ![](./Images/FGRAPH2.png)
- ![](./Images/FGRAPH3 .png)
+ ![](./Images/FGRAPH3.png)
  
  Cuyas aproximaciones en un graficador son:
- ![](./Images/ESCREAL.png)
- ![](./Images/ARMREAL.png)
- ![](./Images/TRGREAL.png)
+ ![](./Images/ESCREAL.jpg)
+ ![](./Images/ARMREAL.jpg)
+ ![](./Images/TRGREAL.jpg)
  
 Si por ejemplo deslizamos el valor a 10 con la función escalonada seleccionada se mostraria lo siguiente:
 ![](./Images/FESCV10.png)
@@ -49,4 +49,4 @@ Para la función triangular con un valor de n igual a 260 se mostraría:
 ![](./Images/FTRGV260.png)
 
 Para la función armónica con un valor de n igual a 190 se mostraría:
-![](./Images/FARMV190.png)
+![](./Images/FTARM190.png)

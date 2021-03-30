@@ -41,15 +41,14 @@ function serieArmonica(x,N){
 
 //Ejemplo de serie 
 function serieTriangular(x,N){
-      let n = 1;
+      let n = 0;
       let sum = 0;
       while(n<=N){
-        sum += ((1/(2*n-1)) * Math.sin((2*n-1)* Math.PI * x) / 3);
+        sum += ((1/((2*n)+1)) * Math.cos((2*n-1)*2*Math.PI*x));
         n++;
       }
-      return sum;
-}
-
+      return (sum);
+    }
 //Selecciona la serie de fourier
 function switcher(seriesIndex,x,limit){
 
@@ -66,9 +65,9 @@ function switcher(seriesIndex,x,limit){
 }
 
 function getData(seriesIndex,limit){
-  return([...new Array(50)].map((row,index) => ({
-    x: index - 50/2,
-    y: switcher(seriesIndex,index+1,limit)
+  return([...new Array(700)].map((row,index) => ({
+    x: (index/70) - 4.5,
+    y: switcher(seriesIndex,((index/70) - 4.5),limit)
   })));
 }
 
@@ -82,7 +81,7 @@ class App extends Component {
   state = {
     data: getData(0,10),
     selectSerie: 0, //Usa este estado para cambiar de una serie a otra.
-    varN: 10
+    varN: 1
   };
   
   render() {
@@ -139,14 +138,14 @@ class App extends Component {
         <div className={useStyles.root}>
           
         <Slider
-          defaultValue={5}
+          defaultValue={1}
           onChange={handleSliderChange}
           aria-labelledby="discrete-slider"
           valueLabelDisplay="auto"
-          step={10}
+          step={2}
           marks
           min={1}
-          max={1000}
+          max={650}
         />
 
         <TextField 
